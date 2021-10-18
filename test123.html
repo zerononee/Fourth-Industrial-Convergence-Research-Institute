@@ -1,0 +1,203 @@
+###############################################################
+###################### 분석환경설정 1 ##########################
+#################### 처음분석할시만 시행 ######################
+###############################################################
+
+#### 분석제목: 일반 SEM 전체그룹
+#### 참고사이트(필요시):
+#### 작업폴더 설정
+#setwd(choose.dir())         # 대화상자가 뜨면 작업폴더 선택
+getwd()                     # 설정된 작업폴더 확인
+
+###############################################################
+###################### 분석환경설정 2 ##########################
+################# 패키지 설치 이후 재실행 해야함 ###############
+###################### (파란색이 나올때까지) ###################
+###############################################################
+
+# 패키지 자동인스톨 및 로드
+packages = c("openxlsx","haven","dplyr","arm", "ggplot2","DT","DiagrammeR","Hmisc", 
+             "RColorBrewer","stargazer","MASS", "corrplot", "moonBook","webr","GGally","scales","plotly")
+package.check <- lapply(packages, FUN = function(x) {
+  if (!require(x, character.only = TRUE)) {
+    install.packages(x, dependencies = TRUE)
+    library(x, character.only = TRUE)}})
+#install.packages("processx")
+
+
+#if (!require('devtools')) install.packages('devtools'); library('devtools')
+#devtools::install_github("matherion/userfriendlyscience", force = TRUE)
+library(userfriendlyscience)
+
+
+# 기존 데이터셋 삭제
+rm(list=ls()) #Removes all items in Environment!
+
+
+# 데이터 로드: 엑셀파일
+Dataset <- read.xlsx("C:\\Users\\82106\\Desktop\\호스피탈리티 통계 기말과제\\test0526.xlsx", sheet = 1) # 파일명: dataset0525.xlsx
+# 데이터 로드: CSV파일
+# Dataset <- read.csv(file.choose())
+# 데이터 로드: SPSS파일
+# Dataset <- read_sav(file.choose())
+
+# 데이터 로드 확인
+dim(Dataset)                       # 데이터의 가로세로수 확인
+head(Dataset)                      # 데이터 앞부분(6개)확인
+names(Dataset)                     # 데이터셋내의 변수명 확인
+datatable(Dataset)                  # html형태로 데이터 로드 상태 확인
+
+# 원하는 데이터 추출
+Dataset_sub <- subset(Dataset,select=c(넷플릭스_N, 유튜브_N, 넷플릭스_G, 유튜브_G, 확진자, google.USD, 넷플릭스.USD, POILDUBUSDM,POILWTIUSDM, High, Low))
+
+# 상관분석 x1, x2 변수할당
+Dataset_sub=Dataset$Dataset_sub$확진자; Dataset_sub=Dataset_sub$Low
+# 그래프로 이해하기
+ggplot(Dataset, aes(x=확진자, y=Low)) + 
+  geom_point(size = 3, color = "red")+ # 포인트색 설정: red(빨강)
+  xlab(' ') +             # x축이름 설정
+  ylab(' ')               # y축이름 설정
+# 추리통계학으로 확인하기
+cor.test(Dataset$확진자, Dataset$Low)
+
+
+
+#### 상관관계 시각화
+names(Dataset) <- c("넷플릭스_G", "유튜브_G","넷플릭스_N", "유튜브_N", "google.USD", "넷플릭스.USD", "확진자", "POILDUBUSDM","POILWTIUSDM", "High", "Low")
+head(Dataset)
+class(Dataset)
+#Dataset_test <- subset[Dataset(subset)!=c("date","select")]
+#Dataset_test <- subset[Dataset(subset)!="date"]
+#Dataset_test <- subset(Dataset,select=-c(date))
+M <- cor(Dataset)
+corrplot(M, order="hclust", addrect=3)
+#### 상관관계 숫자표시
+res2 <- rcorr(as.matrix(Dataset))
+print(res2$r, digits=3)
+print(res2$P, digits=3)
+
+
+#### 변수들의 표준화
+#Dataset=sapply(Dataset_test, function(Dataset) (Dataset-mean(Dataset))/sd(Dataset))
+#Dataset=as.data.frame(Dataset)
+#head(Dataset)
+#compare_vals = cbind(Dataset_num,Dataset)
+#head(compare_vals)
+
+
+#### 회귀분석####
+mod_kw1<-lm(확진자~넷플릭스_G+유튜브_G+넷플릭스_N+유튜브_N, data=Dataset)
+summary(mod_kw1)
+mod_kw1_std<-lm(확진자~넷플릭스_G+유튜브_G+넷플릭스_N+유튜브_N, data=Dataset)
+summary(mod_kw1_std)
+
+stargazer(mod_kw1,mod_kw1_std, type = "text", report = "vct*", star.cutoffs = c(0.05, 0.01, 0.001),
+          column.labels = c("coef", "std coef"), 
+          single.row = TRUE)
+#stargazer(mod_kw1,mod_kw1_std, type = "text", report = "vct*", star.cutoffs = c(0.05, 0.01, 0.001),
+#column.labels = c("coef", "std coef"), 
+#out=file.choose(),
+#single.row = TRUE)
+
+mod_kw2<-lm(넷플릭스.USD~확진자, data=Dataset)
+summary(mod_kw2)
+mod_kw2_std<-lm(넷플릭스.USD~확진자, data=Dataset)
+summary(mod_kw2_std)
+
+stargazer(mod_kw2,mod_kw2_std, type = "text", report = "vct*", star.cutoffs = c(0.05, 0.01, 0.001),
+          column.labels = c("coef", "std coef"), 
+          single.row = TRUE)
+#stargazer(mod_kw2,mod_kw2_std, type = "text", report = "vct*", star.cutoffs = c(0.05, 0.01, 0.001),
+#column.labels = c("coef", "std coef"), 
+#out=file.choose(),
+#single.row = TRUE)
+
+mod_kw3<-lm(google.USD~확진자, data=Dataset)
+summary(mod_kw2)
+mod_kw3_std<-lm(google.USD~확진자, data=Dataset)
+summary(mod_kw3_std)
+
+stargazer(mod_kw3,mod_kw3_std, type = "text", report = "vct*", star.cutoffs = c(0.05, 0.01, 0.001),
+          column.labels = c("coef", "std coef"), 
+          single.row = TRUE)
+stargazer(mod_kw3,mod_kw3_std, type = "text", report = "vct*", star.cutoffs = c(0.05, 0.01, 0.001),
+          column.labels = c("coef", "std coef"), 
+          out=file.choose(),
+          single.row = TRUE)
+
+
+
+grViz("
+      digraph
+      research_model {
+      # 기본형식: 수정할 필요 없음
+      graph [layout = neato, overlap = true, outputorder = edgesfirst]
+      # 동그라미 그리기
+      A [pos='-2, 4!', label='넷플릭스_G', shape=square, fixedsize = true, width = 1.5, height=0.2] #타원: 요인, 직사각형: 변수
+      B [pos='-2, 2!', label='유튜브_G', shape=square, fixedsize = true, width = 1.5, height=0.2] #타원: 요인, 직사각형: 변수
+      C [pos='-2, 0!', label='넷플릭스_N', shape=square, fixedsize = true, width = 1.5, height=0.2] #타원: 요인, 직사각형: 변수
+      D [pos='-2, -2!', label='유튜브_N', shape=square, fixedsize = true, width = 1.5, height=0.2] #타원: 요인, 직사각형: 변수
+      E [pos='-2, -4!', label='trend', shape=square, fixedsize = true, width = 1.5, height=0.2] #타원: 요인, 직사각형: 변수  
+      
+      F [pos='4, 2!', label='확진자\\nR-square = 0.489', shape=square, fixedsize = true, width = 1.5, height=0.2] #타원: 요인, 직사각형: 변수
+      G [pos='4, -2!', label='확진자\\nR-square = 0.489', shape=square, fixedsize = true, width = 1.5, height=0.2] #타원: 요인, 직사각형: 변수
+      
+      H [pos='8, 2!', label='google.USD\\nR-square = 0.436', shape=square, fixedsize = true, width = 2.0, height=0.2] #타원: 요인, 직사각형: 변수
+      I [pos='8, -2!', label='넷플릭스.USD\\nR-square = 0.436', shape=square, fixedsize = true, width = 2.0, height=0.2] #타원: 요인, 직사각형: 변수
+      
+      
+      # 화살표 그리기
+      A->F [headlabel = ' 26.478(1.107)', labeldistance=12, labelangle=7,
+      headport = 'w', tailport = 'e'] # *:1.96, **:2.58, ***:3.30 # , port: 동서남북
+      
+       # 화살표 그리기
+      B->F [headlabel = '1.305(0.111)', labeldistance=0, labelangle=0,
+      headport = 'w', tailport = 'e'] # *:1.96, **:2.58, ***:3.30 # , port: 동서남북
+      
+       # 화살표 그리기
+      C->F [headlabel = '17.682(1.526)', labeldistance=0, labelangle=0,
+      headport = 'w', tailport = 'e'] # *:1.96, **:2.58, ***:3.30 # , port: 동서남북
+      
+      # 화살표 그리기
+      D->F [headlabel = '-6.153(-0.544)', labeldistance=0, labelangle=0,
+      headport = 'w', tailport = 'e'] # *:1.96, **:2.58, ***:3.30 # , port: 동서남북
+      
+      # 화살표 그리기
+      E->F [headlabel = '13.653(3.919) @^{**}', labeldistance=0, labelangle=0,
+      headport = 'w', tailport = 'e'] # *:1.96, **:2.58, ***:3.30 # , port: 동서남북
+      
+      
+      
+      
+      
+      # 화살표 그리기
+      A->G [headlabel = ' 26.478(1.107)', labeldistance=0, labelangle=0,
+      headport = 'w', tailport = 'e'] # *:1.96, **:2.58, ***:3.30 # , port: 동서남북
+      
+       # 화살표 그리기
+      B->G [headlabel = '1.305(0.111)', labeldistance=0, labelangle=0,
+      headport = 'w', tailport = 'e'] # *:1.96, **:2.58, ***:3.30 # , port: 동서남북
+      
+       # 화살표 그리기
+      C->G [headlabel = '17.682(1.526)', labeldistance=0, labelangle=0,
+      headport = 'w', tailport = 'e'] # *:1.96, **:2.58, ***:3.30 # , port: 동서남북
+      
+      # 화살표 그리기
+      D->G [headlabel = '-6.153(-0.544)', labeldistance=0, labelangle=0,
+      headport = 'w', tailport = 'e'] # *:1.96, **:2.58, ***:3.30 # , port: 동서남북
+      
+      # 화살표 그리기
+      E->G [headlabel = '13.653(3.919) @^{**}', labeldistance=0, labelangle=0,
+      headport = 'w', tailport = 'e'] # *:1.96, **:2.58, ***:3.30 # , port: 동서남북
+      
+      
+      
+      
+       # 화살표 그리기
+      F->H [headlabel = '0.134(8.010) @^{***}', labeldistance=12, labelangle=-15,
+      headport = 'w', tailport = 'e'] # *:1.96, **:2.58, ***:3.30 # , port: 동서남북
+      
+      # 화살표 그리기
+      G->I [headlabel = '0.491(7.191) @^{***}', labeldistance=12, labelangle=-16,
+      headport = 'w', tailport = 'e'] # *:1.96, **:2.58, ***:3.30 # , port: 동서남북
+      } ")
