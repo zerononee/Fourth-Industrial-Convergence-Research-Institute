@@ -1,0 +1,54 @@
+---
+title: "contact information"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+<br>
+
+<!-- <center><img src="images/practicalDev_changingstuff.jpg" width="350px"></center>   -->
+
+
+Try changing a few things and reknitting a single page or rebuilding the whole site. Do your own thing, or here are a few things to try: 
+
+<br> 
+
+### 찾아오는 길
+
+<!-- You'll need to add it to the nav bar in `_site.yml` too. -->
+
+1) 지하철 대전역 → 용문역 (5개역, 약 11분)
+
+용문역 3번 출구 정류장 916번 버스 승차 (11개 정류장 이동) → 배재대학교 하차 (약 44분)
+
+
+2) 대전역 정류장 613번 버스 승차 (18개 정류장 이동)
+
+변동중학교 정류장 하차 → 배재대학교 도보 약 10분 (약 51분)
+
+
+3) 목척교 정류장 도보 약 7분
+목척교 정류장 612번 버스 승차 (26개 정류장 이동) → 배재대학교종점 정류장 하차 → 경남아파트 하차 (약 53분)
+
+4) 택시 이용 (약 34분) 10,900원
+
+<br>
+
+### 연구실 연락처
+
+<!-- 1. move `./advanced/_footer.html` to `./_footer.html` (or create a new one) -->
+<!-- 2. uncomment the footer in `_site.yml` -->
+
+<br>
+
+### Add three columns
+
+How would you approach this? See what we did for 3 columns, or Google it.
+
+<br> 
+
+### What else did you learn? 
+
+<!-- [Submit a pull request](https://help.github.com/articles/creating-a-pull-request/) to [this tutorial](https://github.com/jules32/rmarkdown-website-tutorial) and we can update it with what you learn! -->
