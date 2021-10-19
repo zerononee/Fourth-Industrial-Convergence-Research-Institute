@@ -1,6 +1,6 @@
-name: "my-website"
+name: "4차산업 융복합 연구소"
 navbar:
-  title: "My Website"
+  title: "4차산업 융복합 연구소"
   type: inverse
   left:
     - text: "Home"
