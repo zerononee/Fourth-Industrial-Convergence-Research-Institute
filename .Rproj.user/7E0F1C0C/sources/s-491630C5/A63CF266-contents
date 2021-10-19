@@ -1,0 +1,40 @@
+name: "my-website"
+navbar:
+  title: "My Website"
+  type: inverse
+  left:
+    - text: "Home"
+      icon: fa-home
+      href: index.html
+    
+    - text: "introduction"
+      icon: fa-info
+      href: introduction.html
+    
+    - text: "Professor introduce"
+      icon: fa-gear
+      href: Professor_introduce.html
+    
+    - text: "Research results"
+      icon: fa-info
+      href: Research_results.html  
+    
+    - text: "More"
+      icon: fa-gear
+      menu:
+        - text: "Heading 1"
+        - text: "contact information"
+          href: contact_information.html
+        
+        - text: "Page B"
+          href: page-b.html
+        
+        
+        - text: "Page C"
+          href: page-c.html
+        
+        - text: "Page D"
+          href: page-d.html
+  right:
+    - icon: fa-question fa-lg
+      href: https://example.com
