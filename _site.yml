@@ -3,6 +3,7 @@ navbar:
   title: "4차산업 융복합 연구소"
   type: inverse
   left:
+    
     - text: "About"
       icon: fa-info
       menu:
