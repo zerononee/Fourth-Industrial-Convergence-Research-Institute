@@ -3,7 +3,7 @@
     "path": "~/GitHub/Fourth-Industrial-Convergence-Research-Institute/Professor_introduce.Rmd",
     "project_path": "Professor_introduce.Rmd",
     "type": "r_markdown",
-    "hash": "3532140899",
+    "hash": "1784588421",
     "contents": "",
     "dirty": false,
     "created": 1634627956778.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "11,23",
+        "cursorPosition": "20,28",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1634627963,
+    "lastKnownWriteTime": 1636367857,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1634627963255,
+    "last_content_update": 1636368341886,
     "read_only": false,
     "read_only_alternatives": []
 }

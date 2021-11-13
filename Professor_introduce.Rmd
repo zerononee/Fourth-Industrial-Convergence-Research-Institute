@@ -18,9 +18,9 @@ output:
     toc: no
 ---
 
-With this tutorial, we have a working example website that we will explore together. We'll learn a few rules and look for patterns to get an understanding of what things do. And you can continue to use this website as a reference after the tutorial, along with [**RStudio's instructions for R Markdown websites**](http://rmarkdown.rstudio.com/rmarkdown_websites.html).      
+<!-- With this tutorial, we have a working example website that we will explore together. We'll learn a few rules and look for patterns to get an understanding of what things do. And you can continue to use this website as a reference after the tutorial, along with [**RStudio's instructions for R Markdown websites**](http://rmarkdown.rstudio.com/rmarkdown_websites.html).       -->
 
-We'll start our exploration online looking at the website architecture, then we'll clone the repo to our local computers. Locally, we will explore further by going back and forth between the R Markdown editor and built webpages, and make modifications. Pushing to Github will make our modifications live!
+<!-- We'll start our exploration online looking at the website architecture, then we'll clone the repo to our local computers. Locally, we will explore further by going back and forth between the R Markdown editor and built webpages, and make modifications. Pushing to Github will make our modifications live! -->
 
 ----
 ## 송학준 교수
@@ -40,8 +40,8 @@ We'll start our exploration online looking at the website architecture, then we'
 - 성    명 : 송  학  준 (Song, HakJun)
 - 생년월일 : 1978. 5. 16
 - 연 락 처 : 전화: 042) 520-5348<br>
-              H.P.: 010-4300-8764<br>
-	            e-mail: bloodia00@hotmail.com; bloodia@pcu.ac.kr
+             H.P.: 010-4300-8764<br>
+	           e-mail: bloodia00@hotmail.com; bloodia@pcu.ac.kr
 
 <br>
 
@@ -83,10 +83,13 @@ Understanding Casino Visitor's Decision-making Processes within the Perspective 
 ### 연구 관심분야
 
 
-- 카지노 산업 및 정책 분석
+- 빅데이터 및 머신러닝 분석
+- 텍스트 마이닝 분석
+- 통계 패키지 비교분석
 - 수요예측 및 경제적 파급효과 분석
+- 카지노 산업 및 정책 분석
 - 관광객 행동
-- 관광자원의 가치평가
+- 관광위기 관리
 
 
 <br>
@@ -133,20 +136,14 @@ Understanding Casino Visitor's Decision-making Processes within the Perspective 
 35. Ruan, W., Kang, S., & Song, H. (2020). Applying protection motivation theory to understand international tourists’ behavioural intentions under the threat of air pollution: A case of Beijing, China. Current Issues in Tourism. 23(16), 2027-2041.
 36. Wang, J., Choe, Y., & Song, H. (2020). Brand Behavioral Intentions of a Theme Park in China: An Application of Brand Experience. Sustainability, 12(11), 4500.
 37. Wang, J., Kim, J., Moon, J., & Song, H. (2020). The Effect of Smog-Related Factors on Korean Domestic Tourists’ Decision-Making Process. International Journal of Environmental Research and Public Health, 17(10), 3706.
-
-
-35. 원문가랑 미세먼지 논문1
-36. IJERPH 미세먼지
-
-37. sustainability 테마파크
-왕준휘+최윤선 MERS -> JST, 스케줄에 맞지 않음
-
-
-원문가랑 미세먼지 논문2
-왕준휘랑 공정여행 -> sustainability(현교수), 내용 또는 제목변경
-IR 지역주민 논문 
-곽서+최윤선 자전거 -> 제목변경요청
-주붕+서남 베이징 체험경제
+38. Li, Y., Song, H., & Guo, R. (2021). A Study on the Causal Process of Virtual Reality Tourism and Its Attributes in Terms of Their Effects on Subjective Well-Being during COVID-19. International Journal of Environmental Research and Public Health, 18(3), 1019.
+39. Zhang, Y., Park, K. S., & Song, H. (2021). Tourists’ Motivation, Place Attachment, Satisfaction and Support Behavior for Festivals in the Migrant Region of China. Sustainability, 13(9), 5210.
+40. Ruan, W. J., Lee, J., & Song, H. (2021). Understanding Tourist Behavioural Intention When Faced with Smog Pollution: Focus on International Tourists to Beijing. International Journal of Environmental Research and Public Health, 18(14), 7262.
+41. Wang, J., Choe, Y., & Song, H. (2021). Korean Domestic Tourists’ Decision-Making Process under Threat of COVID-19. International Journal of Environmental Research and Public Health, 18(20), 10835.
+42. Song, H., Wang, J., & Lyu, S. O. (2021). Willingness to pay for casino-based integrated resorts: A choice experiment. Journal of Destination Marketing & Management, 19, 100555.
+43. Choe, Y., Wang, J., & Song, H. (2021). The impact of the Middle East Respiratory Syndrome coronavirus on inbound tourism in South Korea toward sustainable tourism. Journal of Sustainable Tourism, 29(7), 1117-1133.
+44. Moon, J., Choe, Y., & Song, H. (2021). Determinants of consumers’ online/offline shopping behaviours during the COVID-19 pandemic. International journal of environmental research and public health, 18(4), 1593.
+45. Song, H., Ruan, W. J., & Jeon, Y. J. J. (2021). An integrated approach to the purchase decision making process of food-delivery apps: Focusing on the TAM and AIDA models. International Journal of Hospitality Management, 95, 102943.
 
 
 <br>
@@ -158,3 +155,163 @@ IR 지역주민 논문
 2. Han, H., Kim, W., Lee, S., & Song, H. (2018). Key Determinants of Upscale Restaurant Patrons’ Repeat Purchase Behavior: Testing the Impact of Inertia. Journal of Quality Assurance in Hospitality & Tourism. 19(1), 66-82.
 3. Han, H., Nguyen, H. N., Song, H. J., Chua, B. L., Lee, S., & Kim, W. (2019). Role of Social Network Services (SNS) Sales Promotions in Generating Brand Loyalty for Chain Steakhouses. Journal of Quality Assurance in Hospitality & Tourism. 20(5), 617-645.
 4. Kang, S., Kim, W. G., & Song, H. (2019). Exploring the Role of Travel and Tourism in Sharing Economy Activities: A Case Study of South Korea. Journal of Quality Assurance in Hospitality & Tourism. 20(5), 599-616.
+
+<br>
+
+### 국내저서
+
+1. 정연선․전현진․송학준․김은혜 (2013). 『국제의료관광 코디네이터』. 광문각.
+2. 문창권, 송학준, 류근철, 문영필, 안명훈 (2019). 『엑셀 2016 단계별 분석』. 북넷.
+3. 문창권, 송학준, 문영필, 손종웅, 김길후 (2019). 『SPSS 첫걸음 단계별 분석』. 북넷.
+
+<br>
+
+### 국내논문: 연구재단 등재지
+
+1. 이충기․최혜정․송학준(2005). 산업연관모델을 통한 관광쇼핑산업의 경제적 파급효과 분석.『호텔경영학연구』, 14(3): 237-255.
+2. 김주연․송학준․박성수(2005). 라이프스타일에 따른 중식(HMR)시장의  세분화: 서울 강남 S백화점의 중식(HMR) 소비자를 중심으로, 『외식경영연구』, 8(2): 137-154.
+3. 이충기․송학준․고종화․고민경(2005). 지역산업연관모형을 이용한 전남관광산업의 경제적 위상분석.『관광연구』, 20(2): 19-34.
+4. 이충기․송덕종․송학준(2006). 산업연관모델을 이용한 카지노산업의 경제적 파급효과 분석.『호텔경영학연구』, 15(4), September: 131-143.
+5. 이충기․송근석․송학준(2006). 일본인 관광객의 방한 수요결정요인에 관한연구: 계량경제모형을 중심으로. 『관광레저연구』, 18(4),  November: 7-25.
+6. 송학준․고민경․변정우․이충기(2007). 영화축제 방문객에 대한 시장세분화 연구: 2004 부천국제판타스틱영화제를 중심으로. 『호텔경영학연구』, 16(1), February: 91-103. 
+7. 고재윤․송학준․우주리(2007). 외식동기를 통한 패밀리 레스토랑 여성고객시장 세분화 전략에 관한 연구. 『외식경영연구』, 10(1): 71-89.
+8. 고재윤․유은이․송학준․김민지(2007). GDP 예측을 통한 국내 외식 산업전망에 관한 연구 - 한․미․일 비교를 중심으로. 『동아시아식생활학회지』, 16(3): 571-579.
+9. 이충기․이진형․송학준(2007). 지역산업연관모델을 이용한 철새관광축제의 지역경제 파급효과 분석. 『관광레저연구』, 19(2), May: 19-34.
+10. 이충기․송학준․신창열(2007). BIE Expo 방문객 수요예측: 계량기법과 질적기법의 적용. 『관광레저연구』, 19(3), August: 263-281.
+11. 이충기․송학준(2007). 최적 시계열 수요예측 모델선정에 관한 연구. 『관광학연구』, 31(6), December: 289-311.
+12. 송학준․이진영․이충기(2008). 환경지각단서를 이용한 내국인카지노 시장세분화 연구.『호텔경영학연구』, 17(2, April):117-130.
+13. 이충기․송학준(2008). 2010년 서울시 인바운드 관광산업의 경제적 파급효과 예측: 직접조사에 의한 지역산업연관모델을 중심으로. 『호텔관광연구』, 10(2, June): 44-56.
+14. Kim, Jin-Won․Yoon, Byeong-Kug, Song,Hak-Jun,Jin, Hyun-Seek(2008). Applications of GIS-based Three-dimentional Modellilng (3D) in Tourism. 『호텔경영학연구』, 17(6), 261-275.
+15. 강상국․송학준․이충기(2009). 주한미군의 한국이미지 변화에 관한 연구: 사전․사후 이미지 비교를 중심으로. 『관광레저연구』, 21(2), May: 243-259.
+16. 심성우․송학준․이충기(2009). 비무장지대 외래관광객의 시장세분화와 가치 연구. 『호텔경영학연구』, 18(3, June): 191-210.
+17. 윤설민․송학준․백주아․김흥렬(2010). 북악산 서울성곽 방문객의 문화유산 인식에 관한 연구: 수정된 신환경패러다임 척도를 중심으로. 『관광레저연구』, 22(1, January): 133-150.
+18. 이충기․송학준(2010). 확장된 계획행동이론을 이용한 갬블링열정과 행동의도간 구조관계 분석.『관광학연구』, 34(3), May: 125-145.
+19. 송학준․이충기(2010). 목표지향적 행동모형을 이용한 복합리조트 카지노 방문객의 행동의도 예측. 『관광레저연구』, 22(5), September: 341-360.
+20. Song, Hak-Jun, Lee, Choong-Ki (2010). Impact Assessment of External Shocks on International Tourism Demand. 『호텔경영학연구』, 19(5): 1-16.
+21. Yang, Byung-Yun, Song, Hak-Jun, Kim, Jin-Won (2010). Developing a Reinforced Heritagescape using GIScience: A Case Study of Gyeongju, South Korea. 『International Journal of Tourism Sciences』, 10(2): 1-34. 
+22. 송학준․최영준․이충기 (2011). 4Es 이론에 따른 축제 방문객의 충성도 연구: 보령머드축제를 중심으로. 『관광연구』, 25(6, Feb): 179-198. 
+23. 이충기․송학준․이대은 (2011). 카지노방문객 시장세분화 연구: 방한 일본 및 중국 관광객을 대상으로. 『호텔경영학연구』, 20(1, Feb): 159-172.
+24. 이충기․송학준 (2011). 지역산업연관모델을 이용한 전통시장 활성화사업의 경제적 파급효과 분석-서울 수유마을시장을 중심으로. 『관광학연구』, 35(5, June): 125-145.
+25. 이재석․송학준․이충기 (2011). Pine과 Gilmore의 체험경제이론에 따른 입체영화 체험,  체험가치 및 만족도에 관한 연구: 영화 ‘아바타’를 중심으로. 『관광레저연구』, 23(5, July): 281-298. 
+26. 이충기․송학준․윤설민(2011). 갬블링 동기․열정․참여의도 간 구조관계 분석: 서울시민을 대상으로. 『호텔경영학연구』, 20(4, Aug): 1-16.
+27. 송학준․이충기․부숙진 (2011). 계획행동이론을 이용한 자연기반 축제의 방문행동 이해.『관광연구저널』, 25(4, Sep): 21-38.
+28. 송학준․이충기․김도영 (2011). 신종플루 인식이 단체관광객의 해외여행 의사결정과정에 미친 영향에 관한 연구.『관광학연구』, 35(7, Sep): 189-209.
+29. 윤설민․송학준․이충기 (2011). 지각된 환경단서에 따른 2010제천국제한방바이오엑스포의 만족도 평가: IPA와 Revised IPA 간 비교를 중심으로. 『관광레저연구』, 23(8, Nov): 229-247.
+30. 송학준․문지효․이충기 (2011).가산자료모형을 이용한 카지노방문객의 수요결정요인 분석. 『호텔경영학연구』, 20(6, Dec): 149-166.
+31. 이충기․송학준․문지효 (2011). 지역간 산업연관모델(IRIO)를 이용한 인바운드 관광산업의 경제적 파급효과 분석: 종로지역을 중심으로. 『관광연구』, 26(5, Dec): 415-433. 
+32. 송학준․문지효․이충기 (2011). 가산자료모형을 이용한 스키 리조트 방문객의 수요결정요인 분석: 하이원 스키 리조트를 중심으로.『한국스포츠산업․경영학회지』, 16(6, Dec): 1-14. 
+33. 신창열․송학준․이충기 (2012). 축제품질, 축제주제 인식, 지각된 가치, 만족도 간 구조관계 연구: 2010 제천국제한방바이오엑스포를 사례로. 『관광연구』, 26(6, Feb): 205-225.
+34. 송학준․이충기․문지효 (2012). IRIO 모델을 이용한 전통시장 활성화사업의 경제적 파급효과 분석: 부산 부전시장 사례를 중심으로. 『관광연구』, 27(1, Apr): 175-193.
+35. Song, Hak-Jun, Lee, Hye-Mi, Lee, Jin-Young (2012). Investigating the Role of Responsible Gambling Strategy in Perspective of Employees. 『International Journal of Tourism Sciences』, 12(2): 107-126. 
+36. 송학준 (2012). 문화관광지 선택속성, 지각된 가치, 만족간 구조적 관계 연구: 경복궁 관광객을 대상으로. 『호텔경영학연구』, 21(5): 219-236. 
+37. 문지효․이충기․송학준 (2012). 유희적 갬블링 활동에 미치는 영향요인 추정-로짓모델과 순위로짓모델 간 비교를 중심으로-. 『관광학연구』, 36(7): 177-195. 
+38. 한상린·문지효·송학준 (2013). 가산자료모형을 이용한 와인소비자의 구매행동 분석.『상품학연구』, 31(3): 23-36. 
+39. 송학준·문지효·최상수·이충기 (2013). 한방의료 축제의 경제적 파급효과 분석: ‘2011 제천한방바이오박람회’를 중심으로.『호텔경영학연구』, 22(3): 221-233.
+40. 이혜미·이충기·송학준 (2013). 기업의 사회적 책임 활동에 대한 인식과 조직 동일시, 그리고 조직신뢰 간 구조관계 연구.『관광학연구』, 37(7): 195-216.
+41. 송학준·문지효·이충기 (2013). 국제관광의 ‘산업 내 무역’ 이론 적용가능성 검토 및 결정요인 분석: 중력모형(Gravity Model)을 중심으로.『호텔경영학연구』, 22(5): 23-39.
+42. 안영주·신창열·송학준·이충기 (2013). 오송화장품∙뷰티세계산업박람회 방문객 동기와 시장세분화 연구.『관광레저연구』, 25(8): 571-589.
+43. 송학준 (2013). 2012 여수엑스포 방문객의 체험이 지각된 가치와 만족도에 미치는 영향: 체험경제 이론을 중심으로.『호텔경영학연구』, 22(6): 159-174.
+44. 고재윤·송학준·유은이 (2014). 확장된 목표지향적 행동모형을 이용한 와인구매 의도 예측.『관광학연구』, 38(4): 11-36.
+45. 송학준·변정우·이충기 (2014). 카지노 시장변화에 따른 한국 카지노산업 발전방안.『관광연구』, 29(5): 1-22.
+46, 송학준·이충기 (2015). 템플스테이 체험이 방문객 행동의도 형성에 미치는 영향: 체험경제이론을 중심으로『관광연구』, 30(6): 303-322.
+47. 송학준·이충기 (2015) 복합리조트 시대에 대응한 한국 카지노산업 발전방안『관광레저연구』, 27(11): 231-251.
+48. 임지현·최윤선·송학준 (2016). 기능적, 상징적, 경험적 브랜드 이미지, 만족, 신뢰, 충성도간의 인과관계에 대한 연구: 패밀리 레스토랑 이용객을 중심으로『Journal of the Korean Data Analysis Society』, 18(6): 3251-3268.
+49. 윤설민·송학준 (2016). 축제 품질, 감정(즐거움, 각성, 지배), 만족도, 그리고 축제 개최효과 간 구조적 영향관계 분석: 자극-유기체-반응(S-O-R)을 중심으로『호텔관광연구』,18(6): 561-580.
+50. 장운요·송학준·박근수 (2016). A study on tourists experiences and satisfaction to macao casinos 『관광연구저널』, 30(10): 83-95.
+51. 여지영·김혜란·송학준·한희섭 (2017).  브랜드 커피전문점 이용의도 형성과정에 관한 연구 : 전환비용의 조절효과 중심으로『호텔경영학연구』, 26(7): 71-88.
+52. 김주향·송학준 (2017). HMR(Home Meal Replacement) 판매업체의 서비스품질에 따른 지각된 가치가 고객만족도에 미치는 영향에 관한 연구 『관광레저연구』, 29(1): 317-333.
+53. 김주연·안경모·송학준(2017). Effects of media and destination image on the behavioral intention to visit Hwacheon Sancheoneo Ice Festival 『관광연구저널』, 31(4): 27-41.
+54. 신민정·원문가·송학준 (2018). 동기, 선택속성, 관광만족, 재방문의도, 생활만족간 인과관계에 대한 연구 : 공정여행 여행객을 중심으로『호텔경영학연구』, 27(6): 1-16.
+55. 이소연·윤민철·송학준 (2018). 방한 러시아 관광객 수요결정요인에 관한 연구: 계량경제모형을 중심으로『관광레저연구』, 30(5): 5-20.
+56. 최연화·김준우·송학준 (2018). 복합리조트 개발에 대한 지역주민 영향인식, 장소애착심, 개발인식 및 개발지지도간 영향관계에 대한 연구『호텔경영학연구』, 27(8): 281-296.
+57. 신영송·김효은·송학준 (2018). 소셜미디어 외식정보 탐색 행동의도에 관한 연구 - 확장된 목표지향적 행동모형을 중심으로『관광레저연구』, 30(12): 285-306.
+58. Fathi, H, Wang, J. H. & Song, H. J. (2018). A study on strategies for local tourism development in Morocco from the perspective of community-based tourism: The case study of Chefchaouen 『호텔경영학연구』, 27(2): 21-36.
+59. Ruan, W. J. & Song, H. J. (2018). Tourists' decision-making process under the threat of smog: Focusing on the case of Beijjing inbound tourism『관광연구저널』, 32(10): 127-137.
+60. 송학준·윤민철·진남. (2019). 배달앱의 구매의사결정과정에 대한 통합적 접근: AIDA 모델과 MGB 를 중심으로. 『호텔경영학연구』, 28(4), 249-265.
+61. Han, H., Eom, T., Nguyen, H. N., Song, H., Chua, B. L., Lee, S., & Kim, W. (2019). Chain restaurant brand and patrons’ post-purchase behaviors in the steakhouse context. 『관광연구저널』 33(4): 29-39.
+62. Wang, J. H., & Song, H. (2019). The study of spatial concentration in the hotel industry: Focusing on the US case. 『관광연구저널』, 33(10), 99-108.
+63. Han, H., Song, H., Jung, I. Y., & Jung, H. K. (2019). Starbucks and its brand performance in the formation of patron retention. 『관광연구저널』, 33(10), 67-77.
+64. 송학준. (2020). 규제제도 검토를 통한 한국 카지노 산업 발전전략. 호텔관광연구. 22(1), 201-214.
+65. 송학준·한주형. (2020). 텍스트 마이닝을 이용한 여가소비 트렌드로서 소확행 현상에 관한 연구. 호텔경영학연구, 29(3), 59-75.
+66. 송학준·박혜미. (2020). 소확행 여행에 대한 탐색적 연구: 육하원칙 (5W1H) 에 따른 개념정리를 중심으로. 관광레저연구, 32(6), 449-468.
+67. Moon, J. H., Lee, J. W., & Song, H. J. (2020). Structural relationship among airline service failure, perceived betrayal, and relationship dissolution behavior: Focused on the moderating effect of recovery types. 『호텔경영학연구』, 29(6), 61-78.
+68. HakJun, S., Namhyun, K., & Hyun, P. J. (2021). Does the Crisis Information Search Tell the Impact of Disease on International Tourism Demand?. 관광학연구, 45(6), 37-64.
+69. 김주향·송학준. (2021). 미세먼지 위협 상황 하에서 내국인 잠재관광객의 행동의도-보호동기이론 (PMT) 적용. 호텔리조트연구, 20(2), 179-199.
+70. 박수현·송학준. (2021). 외국인 전용 카지노의 관광산업적 역할과 발전방안에 대한 연구. 호텔리조트연구, 20(1), 311-328.
+
+<br>
+
+### 국내 논문 : 기타
+
+1. Yang, B. Y. Song, H. J., & Kim, J. W. (2010). Developing a Reinforced Heritage using GIScience: A Case Study of Gyeongju, South Korea.『International Journal of Tourism Sciences』, 10(2): 1-34.
+2. Song, H. J., Lee, H. M., & Lee, J. Y. (2012). Investigating the Role of Respsonsible Gambling Strategy in Perspective of Employees.『International Journal of Tourism Sciences』, 12(2): 107-126.
+
+<br>
+
+### 프로젝트 수행경력
+
+**한국연구재단(학술진흥재단)** 
+1. 한국학술진흥재단(2012).『신진과제』. “체험경제(4Es) 이론에 따른 2012 여수엑스포 방문객의 만족도 연구.”
+2. 한국학술진흥재단(2013).『우수논문지원』. “행동의도형성에서 책임도박 전략의 역할: 목표지향적 행동모델의 적용.”
+3. 한국학술진흥재단(2017).『중견과제』. “배달앱 이용자의 구매의사결정과정에 대한 통합적 접근: ADIA와 목표지향적행동모형을 중심으로.”
+4. 한국학술진흥재단(2018).『중견과제(2년과제)』. “소확행 현상에 대한 통합적 연구: 한국사회와 관광산업을 중심으로.”
+5. 한국학술진흥재단(2018).『일반공동과제』. “미세먼지 상황하에서 관광객 행동에 대한 연구.”
+
+<br>
+
+### 국내프로젝트 수행경력
+
+- 2015년까지 공동연구원으로서 26개의 프로젝트 수행
+
+1. 국립공원연구원(2017). 2017 국립공원 여가휴양 실태조사.[공동연구]
+2. 국립공원연구원(2017). 국립공원 명품마을 운영활성화를 위한 평가체계 및 관리 매뉴얼 개발.[공동연구]
+3. 한국카지노업관광협회(2017). 전문모집인 실태분석 및 발전방안.[공동연구]
+4. 한국카지노업관광협회(2018). 국내외 카지노 규제제도 조사 및 비교연구.[책임연구]
+5. 한국지방행정연구원(2018). (가칭)전주스포츠타운 종합실내체육관 건립사업 타당성 재조사.[책임연구]
+6. 한국카지노업관광협회(2020). 외국인 전용 카지노의 구조분석과 경제적 역할[책임연구]
+
+<br>
+
+### 수상경력
+
+1. 강원랜드 주관 건전한 게임문화 형성 논문공모전, '리조트화를 통한 게임건전화 전략'이라는 연구로 장려상 수여. 2003. 10.
+2. 한국관광학회 학술대회, '관광쇼핑의 경제적 파급효과에 관한 연구'로 컨벤션학회장상 수여. 2004. 7.
+3. 한국관광학회-APTA 학술대회, '관광동기에 따른 축제방문객 시장세분화에 관한 연구'로 한국관광협회중앙회 회장상 수여. 2005. 7.
+4. 제20회 매일경제 대학생 경제논문 대회, '지역산업연관분석을 통한 전남지역 관광산업의 경제적 위상'이라는 연구로 지역경제·국제협력 부문에서 우수상 수여. 2005. 12.
+5. 제1회 KIEP(대외경제정책연구원) 대학(원)생 세계지역연구 우수논문 공모전, '한일 FTA에 따른 한일관계 변화가 관광산업에 미치는 영향에 관한 연구'로 지역경제·국제협력 부문에서 장려상 수여. 2006. 2.             
+6. 한국관광학회 학술대회, '외식동기를 통한 패밀리 레스토랑 시장세분화 전략에 관한 연구'로 한국관광학회 회장상 수여. 2006. 2.
+7. 전북 한국관광학회 국제학술대회, 'Developing a Reinforced Heritagescape using GIScience: A Case Study of Gyeongju'로 최우수 논문상 수여. 2010. 7.
+8. 울산 한국관광학회 국제학술대회, 'Investigating the Role of Responsible Gambling Strategy in Perspective of Employees'로 우수 논문상 수여. 2012. 6.
+9. 2013학년도 배재대학교 연구우수교원.
+10. 2014학년도 배재대학교 연구우수교원.
+11. 서울 한국호텔외식관광경영학회 국제학술대회, ‘Examining Structural Relationships among Casino’s Corporate Social Responsibility, Customer Trust, and  Behavioral Intension’로 우수 논문상 수여. 2015. 6.
+12.5th Conference of the International Association for Tourism Economics, ‘The Relationship among Tourism Competitiveness, Poverty, and Economic Growth in Developing Countries: A Panel Data Regression Analysis. 2015. 6.
+13. 2016학년도 배재대학교 연구우수교원
+14. 2018학년도 배재대학교 연구우수교원
+15. 2019학년도 배재대학교 연구우수교원
+16. 우수심사위원상, 한국호텔외식관광경영학회, 2018.5.
+17. 우수논문상, 한국호텔관광학회, 2017.8.
+18. 우수논문상, 한국호텔외식관광경영학회, 2019.12.
+19. 2020학년도 배재대학교 연구우수교원
+20. 2021학년도 배재대학교 연구우수교원
+
+<br>
+
+### 기타활동
+
+2011.09.01 ~ 2013.08.31 한국관광학회 이사 제7대 이사
+2012.01.01 ~ 2014.02.28 한국의료관광학회 부회장 부회장
+2016.01.01 ~ 2017.12.31 한국관광학회 편집위원회 제23대 편집위원
+2013.09.01 ~ 2015.08.31 한국관광학회 이사 
+2015.03.02 ~ 2020.08.31 취업동아리 지도교수 
+2015.03.02 ~ 2020.08.31 취업동아리 지도교수 
+2018.01.01 ~ 2020.08.31 한국관광학회 편집위원회 제24대 편집위원
+2019.01.01 ~ 2020.08.31 한국호텔리조트학회 편집위원회 편집위원
+2019.03.01 ~ 2020.03.31 한국관광연구학회 편집위원회 부편집위원장
+2020.04.01 ~ 2020.08.31 한국관광연구학회 편집위원회 편집위원
+2019.04.01 ~ 2020.08.31 한국관광레저학회 제15대 이사
+2019.04.01 ~ 2020.08.31 한국관광레저학회 편집위원회 편집위원
+2018.03.14 ~ 2019.02.28 배재미래위원회 위원 
+2018.05.31 ~ 2019.04.30 창업동아리 지도교수 
+2017.09.01 ~ 2019.08.31 한국관광학회 이사 제24대 선임이사
+2019.03.01 ~ 2020.02.28 대전세종상생포럼 운영위원

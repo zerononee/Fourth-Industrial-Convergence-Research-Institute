@@ -1,6 +1,6 @@
-name: "4차산업 융복합 연구소"
+name: "Fourth Industrial Convergence Research Institute"
 navbar:
-  title: "4차산업 융복합 연구소"
+  title: "Fourth Industrial Convergence Research Institute"
   type: inverse
   left:
     
@@ -8,15 +8,12 @@ navbar:
       icon: fa-info
       menu:
         - text: "Fourth Industrial Convergence Research Institute"
-          
           href: index.html
         
         - text: "History"
           href: Examples.html
         
-        - text: "Location"
-          href: contact_information.html
-    
+        
     - text: "Member"
       icon: fa-info
       menu:
@@ -26,6 +23,15 @@ navbar:
         - text: "introduction"
           href: introduction.html
 
+    
+    - text: "Activiy"
+      icon: fa-info
+      menu:
+        - text: "casino"
+          href: casino22.html
+        - text: "2020"
+          href: Examples.html
+
     - text: "Project"
       icon: fa-info
       menu:
@@ -33,19 +39,11 @@ navbar:
           href: Examples.html
         # - text: "Professor"
         #   href: page-b.html
-
-    - text: "Gallery"
+        
+    - text: "Location"
       icon: fa-info
-      menu:
-        - text: "2021"
-          href: Examples.html
-        - text: "2020"
-          href: Examples.html
-          
-    - text: "News & Events"
-      icon: fa-info
-      href: Examples.html
-
+      href: contact_information.html
+    
     
   right:
     - icon: fa-question fa-lg

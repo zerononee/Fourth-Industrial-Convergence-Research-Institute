@@ -1,5 +1,21 @@
 ---
 title: "introduction"
+output:
+  html_document:
+    fig_height: 6
+    fig_width: 10
+    highlight: textmate
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+  pdf_document:
+    fig_height: 6
+    fig_width: 10
+    toc: no
+  word_document:
+    fig_height: 6
+    fig_width: 9
+    toc: no
 ---
 
 
@@ -54,7 +70,7 @@ title: "introduction"
 
 보기: 
 
-- 학력사항 :
+- 학력사항 :  배재대학교 호텔레저경영학과 재학, 호스피탈리티SW융합(복수전공)
 - 경력사항(일반경력): 
 - 경력사항(수상 경력):
 - 자격사항:
