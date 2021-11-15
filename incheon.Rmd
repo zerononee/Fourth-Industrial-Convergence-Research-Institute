@@ -1,0 +1,176 @@
+---
+title: "incheon data"
+output:
+  html_document:
+    fig_height: 6
+    fig_width: 10
+    highlight: textmate
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+  pdf_document:
+    fig_height: 6
+    fig_width: 10
+    toc: no
+  word_document:
+    fig_height: 6
+    fig_width: 9
+    toc: no
+---
+
+# I. 기본셋팅{.tabset .tabset-fade}  
+```{r setup, include=FALSE}
+if (!require(pacman)) {install.packages("pacman")
+  library(pacman)}
+pacman::p_load("flexdashboard","ggplot2","plotly","shiny","plyr","dplyr",
+               "plotly","tm", "crosstalk","readxl","crosstalk", "readxl",
+               "readxl","summarytools","webr","ggplot2","curl","Hmisc",
+               "sjmisc","car","lawstat","DiagrammeR","skimr",
+               "tidyr","dplyr","broom","tidyverse","userfriendlyscience")
+```
+
+## I.1. 데이터 로드  
+```{r include=FALSE}
+# file.choose()
+DATA = read_excel("D:\\R\\RStudio\\code\\marketing\\incheon0427.xlsx")
+```
+
+### I.1.1. 데이터 로드 확인  
+```{r}
+head(DATA)
+```
+
+```{r}
+names(DATA)
+```
+
+```{r}
+dim(DATA)
+```
+
+# II. 데이터 가공{.tabset .tabset-fade}  
+
+## II.1. 원하는 데이터 추출  
+```{r}
+Dataset_sub <- subset(DATA,select=c(q1,q3,q7,q84,q85,q86,q88_1,q89,q10,
+                                       q11,q12,q23,q24,q25,q48,q49,
+                                       q50,q72,q73,q74,q83))
+```
+
+```{r}
+str(Dataset_sub)
+```
+
+```{r}
+summary(Dataset_sub)
+```
+
+```{r}
+DATA=Dataset_sub
+```
+
+## II.2. 양적변수의 질적변수화  
+```{r}
+DATA$q1 <- factor(DATA$q1, labels=c('남자','여자'))
+DATA$q3 <- factor(DATA$q3, labels=c('20대','30대','40대', '50대','60대'))
+DATA$q7 <- factor(DATA$q7, labels=c('예','아니오'))
+DATA$q84 <- factor(DATA$q84, labels=c('고졸이하','전문대', '대학교','대학원'))
+DATA$q85 <- factor(DATA$q85, labels=c('미혼','기혼','기타'))
+DATA$q86 <- factor(DATA$q86, labels=c('100만원미만','100만원대', 
+                                            '200만원대','300만원대','400만원대',
+                                            '500만원대','600만원대','700만원대',
+                                            '800만원이상'))
+DATA$q89 <- factor(DATA$q89, labels=c('있다','없다'))
+DATA$q83 <- factor(DATA$q83, labels=c('예','아니오'))
+```
+
+```{r}
+names(DATA)
+```
+
+```{r}
+Dataset_cate <- subset(DATA,select=c(q1,q3,q7,q84,q85,q86,q89,q83))
+```
+
+```{r}
+summarytools::freq(Dataset_cate, plain.ascii = FALSE)
+```
+
+## II.3. 양적변수에 대한 평균변수 만들기  
+```{r}
+DATA$pos_eco = with(DATA,(q10+q11+q12)/3) # 긍정적 경제효과
+DATA$pos_soc = with(DATA,(q23+q24+q25)/3) # 긍정적 사회효과
+DATA$percept = with(DATA,(q48+q49+q50)/3) # 개발인지
+DATA$support = with(DATA,(q72+q73+q74)/3) # 개발지지
+```
+
+## II.4. 독립표본 t-test  
+```{r}
+meanFunction <- function(x){return(data.frame(y=round(mean(x),2), label=round(mean(x,na.rm=T),2)))}
+```
+
+```{r}
+DATA$x1=DATA$q1; DATA$x2=DATA$pos_soc
+```
+
+```{r}
+ggplot(DATA, aes(x = x1, y = x2, group = x1)) +
+  geom_boxplot(aes(fill=x1), position = position_dodge(width=0.9)) +
+  xlab(' ') + # x축 이름설정
+  ylab(' ') + # y축 이름설정
+  scale_fill_brewer(name = ' ', palette = 'Paired') + # 색인이름 설정
+  stat_summary(fun.y = mean, geom="point",colour="darkred", size=4) +
+  stat_summary(fun.data = meanFunction, geom="text", size = 4, vjust=1.3)
+```
+
+```{r}
+var.test(DATA$x2 ~ DATA$x1)
+t.test(DATA$x2 ~ DATA$x1, var.equal=T)
+t.test(DATA$x2 ~ DATA$x1, var.equal=F)
+```
+
+## II.5. oneway ANOVA
+```{r}
+meanFunction <- function(x){
+  return(data.frame(y=round(mean(x),2),label=round(mean(x,na.rm=T),2)))}
+```
+
+```{r}
+DATA$x1=Dataset_cate$q84; DATA$x2=DATA$pos_soc
+```
+
+```{r}
+ggplot(DATA, aes(x = x1, y = x2, group = x1)) +
+  geom_boxplot(aes(fill=x1), position = position_dodge(width=0.9)) +
+  xlab(' ') + # x축 이름설정
+  ylab(' ') + # y축 이름설정
+  scale_fill_brewer(name = ' ', palette = 'Paired') + # 색인이름 설정
+  stat_summary(fun.y = mean, geom="point",colour="darkred", size=4) +
+  stat_summary(fun.data = meanFunction, geom="text", size = 4, vjust=1.3)
+```
+
+## II.6. 등분산  
+
+### 등분산 확인하는 방법  
+```{r}
+bartlett.test(x2 ~ x1, data=DATA)
+```
+
+### 등분산 만족시  
+```{r}
+round(tapply(DATA$x2, DATA$x1, mean),3)
+round(tapply(DATA$x2, DATA$x1, sd),3)
+anova<-aov(x2 ~ x1, data=DATA)
+summary(anova)
+```
+
+### 사후분석  
+```{r}
+post<-TukeyHSD(anova); post
+```
+
+### 등분산 불만족시  
+```{r}
+oneway.test(x2 ~ x1,data=DATA,var.equal=FALSE) # 정규분포는 하나 등분산은 아닐 때
+```
+

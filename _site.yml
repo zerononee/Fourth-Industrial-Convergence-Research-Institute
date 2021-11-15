@@ -3,17 +3,17 @@ navbar:
   title: "Fourth Industrial Convergence Research Institute"
   type: inverse
   left:
-    
+
     - text: "About"
       icon: fa-info
       menu:
         - text: "Fourth Industrial Convergence Research Institute"
           href: index.html
-        
+
         - text: "History"
           href: Examples.html
-        
-        
+
+
     - text: "Member"
       icon: fa-info
       menu:
@@ -23,14 +23,16 @@ navbar:
         - text: "introduction"
           href: introduction.html
 
-    
+
     - text: "Activiy"
       icon: fa-info
       menu:
         - text: "casino"
           href: casino22.html
-        - text: "2020"
-          href: Examples.html
+        - text: "economy"
+          href: economy.html
+        - text: "incheon"
+          href: incheon.html
 
     - text: "Project"
       icon: fa-info
@@ -39,12 +41,12 @@ navbar:
           href: Examples.html
         # - text: "Professor"
         #   href: page-b.html
-        
+
     - text: "Location"
       icon: fa-info
       href: contact_information.html
-    
-    
+
+
   right:
     - icon: fa-question fa-lg
       href: https://example.com
