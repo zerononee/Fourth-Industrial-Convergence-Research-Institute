@@ -10,14 +10,14 @@
 
 
 
-<meta name="date" content="2021-11-15" />
+<meta name="date" content="2021-11-30" />
 
 <title>산업연관분석</title>
 
-<script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -34,7 +34,7 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
@@ -320,22 +320,12 @@ div.tocify {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+        <li>
+  <a href="index.html">
     <span class="fa fa-info"></span>
      
-    About
-     
-    <span class="caret"></span>
+    Home
   </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="index.html">Fourth Industrial Convergence Research Institute</a>
-    </li>
-    <li>
-      <a href="Examples.html">History</a>
-    </li>
-  </ul>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -370,21 +360,7 @@ div.tocify {
       <a href="economy.html">economy</a>
     </li>
     <li>
-      <a href="Examples.html">2020</a>
-    </li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    <span class="fa fa-info"></span>
-     
-    Project
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="Examples.html">Current</a>
+      <a href="incheon.html">incheon</a>
     </li>
   </ul>
 </li>
@@ -413,15 +389,15 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">산업연관분석</h1>
-<h4 class="date">2021-11-15</h4>
+<h4 class="date">2021-11-30</h4>
 
 </div>
 
 
-<div id="i.-산업연관표-구성" class="section level1 tabset tabset-fade">
-<h1 class="tabset tabset-fade">I. 산업연관표 구성</h1>
-<div id="i.1.-내생부문-생성" class="section level2">
-<h2>I.1. 내생부문 생성</h2>
+<div id="i.-산업연관표-구성" class="section level1 tabset tabset-fade" number="1">
+<h1 class="tabset tabset-fade"><span class="header-section-number">1</span> I. 산업연관표 구성</h1>
+<div id="i.1.-내생부문-생성" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> I.1. 내생부문 생성</h2>
 <pre class="r"><code>내생부문&lt;-matrix(c(1842,25440,3167,8522,359803,114617,4023,85978,189892), nrow=3, ncol=3, byrow=T)
 print(내생부문)</code></pre>
 <pre><code>##      [,1]   [,2]   [,3]
@@ -431,8 +407,8 @@ print(내생부문)</code></pre>
 <pre class="r"><code>print(dim(내생부문))</code></pre>
 <pre><code>## [1] 3 3</code></pre>
 </div>
-<div id="i.2.-산업이름-지정" class="section level2">
-<h2>I.2. 산업이름 지정</h2>
+<div id="i.2.-산업이름-지정" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> I.2. 산업이름 지정</h2>
 <pre class="r"><code>sec_names &lt;- c(&quot;농업&quot;,&quot;제조업&quot;,&quot;서비스업&quot;)
 rownames(내생부문) &lt;- sec_names
 colnames(내생부문) &lt;- sec_names
@@ -442,8 +418,8 @@ print(내생부문)</code></pre>
 ## 제조업   8522 359803   114617
 ## 서비스업 4023  85978   189892</code></pre>
 </div>
-<div id="i.3.-부가가치계-생성" class="section level2">
-<h2>I.3. 부가가치계 생성</h2>
+<div id="i.3.-부가가치계-생성" class="section level2" number="1.3">
+<h2><span class="header-section-number">1.3</span> I.3. 부가가치계 생성</h2>
 <pre class="r"><code>부가가치계&lt;-matrix(c(23900,178772,396973), nrow=3)
 rownames(부가가치계) &lt;- sec_names
 colnames(부가가치계) &lt;- c(&quot;부가가치계&quot;)
@@ -454,8 +430,8 @@ print(dim(부가가치계))</code></pre>
 <pre><code>##             농업 제조업 서비스업
 ## 부가가치계 23900 178772   396973</code></pre>
 </div>
-<div id="i.4.-고용자수-생성" class="section level2">
-<h2>I.4. 고용자수 생성</h2>
+<div id="i.4.-고용자수-생성" class="section level2" number="1.4">
+<h2><span class="header-section-number">1.4</span> I.4. 고용자수 생성</h2>
 <pre class="r"><code>고용자수&lt;-matrix(c(3705,29104,138584), nrow=3)
 rownames(고용자수) &lt;- sec_names
 colnames(고용자수) &lt;- c(&quot;고용자수&quot;)
@@ -466,8 +442,8 @@ print(dim(고용자수))</code></pre>
 <pre><code>##          농업 제조업 서비스업
 ## 고용자수 3705  29104   138584</code></pre>
 </div>
-<div id="i.5.-총투입물-생성" class="section level2">
-<h2>I.5. 총투입물 생성</h2>
+<div id="i.5.-총투입물-생성" class="section level2" number="1.5">
+<h2><span class="header-section-number">1.5</span> I.5. 총투입물 생성</h2>
 <pre class="r"><code>총투입물&lt;-matrix(c(38287,649993,704649), nrow=3)
 dim(총투입물)</code></pre>
 <pre><code>## [1] 3 1</code></pre>
@@ -480,8 +456,8 @@ print(dim(총투입물))</code></pre>
 <pre><code>##           농업 제조업 서비스업
 ## 총투입물 38287 649993   704649</code></pre>
 </div>
-<div id="i.6.-최종수요-생성" class="section level2">
-<h2>I.6. 최종수요 생성</h2>
+<div id="i.6.-최종수요-생성" class="section level2" number="1.6">
+<h2><span class="header-section-number">1.6</span> I.6. 최종수요 생성</h2>
 <pre class="r"><code>최종수요&lt;-matrix(c(783800000000,16705100000000,42475600000000), nrow=3)
 print(최종수요)</code></pre>
 <pre><code>##             [,1]
@@ -496,8 +472,8 @@ print(최종수요)</code></pre>
 ## 제조업   1.67051e+13
 ## 서비스업 4.24756e+13</code></pre>
 </div>
-<div id="i.7.-산업연관표-생성" class="section level2">
-<h2>I.7. 산업연관표 생성</h2>
+<div id="i.7.-산업연관표-생성" class="section level2" number="1.7">
+<h2><span class="header-section-number">1.7</span> I.7. 산업연관표 생성</h2>
 <pre class="r"><code>input=rbind(내생부문,부가가치계,총투입물)
 총생산물=t(총투입물)
 colnames(총생산물) &lt;- c(&quot;총생산물&quot;)
@@ -524,10 +500,10 @@ output</code></pre>
 ## 고용자수 3705  29104   138584</code></pre>
 </div>
 </div>
-<div id="ii.-산업연관분석-준비" class="section level1 tabset tabset-fade">
-<h1 class="tabset tabset-fade">II. 산업연관분석 준비</h1>
-<div id="ii.1.-투입계수a행렬-생성" class="section level2">
-<h2>II.1. 투입계수(A)행렬 생성</h2>
+<div id="ii.-산업연관분석-준비" class="section level1 tabset tabset-fade" number="2">
+<h1 class="tabset tabset-fade"><span class="header-section-number">2</span> II. 산업연관분석 준비</h1>
+<div id="ii.1.-투입계수a행렬-생성" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> II.1. 투입계수(A)행렬 생성</h2>
 <p>총투입물확장행렬 = rep(총투입물,n=산업의수)</p>
 <pre class="r"><code>A_mat &lt;- sweep(내생부문,2, 총투입물, &#39;/&#39;)
 A_mat</code></pre>
@@ -536,22 +512,22 @@ A_mat</code></pre>
 ## 제조업   0.22258208 0.55354904 0.162658288
 ## 서비스업 0.10507483 0.13227527 0.269484524</code></pre>
 </div>
-<div id="ii.2.-부가가치계계수-생성" class="section level2">
-<h2>II.2. 부가가치계계수 생성</h2>
+<div id="ii.2.-부가가치계계수-생성" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> II.2. 부가가치계계수 생성</h2>
 <pre class="r"><code>부가가치계계수=부가가치계/총투입물
 부가가치계계수</code></pre>
 <pre><code>##                 농업    제조업  서비스업
 ## 부가가치계 0.6242328 0.2750368 0.5633628</code></pre>
 </div>
-<div id="ii.3.-고용자수계수-생성" class="section level2">
-<h2>II.3. 고용자수계수 생성</h2>
+<div id="ii.3.-고용자수계수-생성" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> II.3. 고용자수계수 생성</h2>
 <pre class="r"><code>고용자수계수=고용자수/총투입물
 고용자수계수</code></pre>
 <pre><code>##                농업     제조업 서비스업
 ## 고용자수 0.09676914 0.04477587 0.196671</code></pre>
 </div>
-<div id="ii.4.-생산유발승수-생성" class="section level2">
-<h2>II.4. 생산유발승수 생성</h2>
+<div id="ii.4.-생산유발승수-생성" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> II.4. 생산유발승수 생성</h2>
 <p>I-A의 역행렬: 생산유발계수</p>
 <pre class="r"><code>I=diag(nrow(A_mat)) # 단위행렬
 IminusA_reverse = solve(I-A_mat)
@@ -569,8 +545,8 @@ dim(IminusA_reverse)</code></pre>
 <pre><code>##     농업   제조업 서비스업 
 ## 1.984017 3.022406 2.054079</code></pre>
 </div>
-<div id="ii.5.-각종계수와-생산유발승수" class="section level2">
-<h2>II.5. 각종계수와 생산유발승수</h2>
+<div id="ii.5.-각종계수와-생산유발승수" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> II.5. 각종계수와 생산유발승수</h2>
 <pre class="r"><code>basic_list&lt;-list(A_mat,부가가치계계수,고용자수계수,생산유발승수행렬,생산유발승수)
 names(basic_list) &lt;- c(&quot;투입계수&quot;,&quot;부가가치계계수&quot;,&quot;고용자수계수&quot;,&quot;생산유발승수행렬&quot;,&quot;생산유발승수&quot;)
 basic_list</code></pre>
@@ -598,8 +574,8 @@ basic_list</code></pre>
 ##     농업   제조업 서비스업 
 ## 1.984017 3.022406 2.054079</code></pre>
 </div>
-<div id="ii.6.-부가가치계유발승수행렬과-승수" class="section level2">
-<h2>II.6. 부가가치계유발승수행렬과 승수</h2>
+<div id="ii.6.-부가가치계유발승수행렬과-승수" class="section level2" number="2.6">
+<h2><span class="header-section-number">2.6</span> II.6. 부가가치계유발승수행렬과 승수</h2>
 <pre class="r"><code>부가가치계유발승수행렬&lt;-생산유발승수행렬%*%diag(as.numeric(부가가치계계수)) # %*%: 행렬곱
 부가가치계유발승수=colSums(부가가치계유발승수행렬) # 생산승수: 생산유발계수행렬의 열합
 value_list&lt;-list(부가가치계유발승수행렬,부가가치계유발승수)
@@ -614,8 +590,8 @@ value_list</code></pre>
 ## $부가가치계유발승수
 ## [1] 1.2384885 0.8312729 1.1571915</code></pre>
 </div>
-<div id="ii.7.-고용자수유발승수행렬과-승수" class="section level2">
-<h2>II.7. 고용자수유발승수행렬과 승수</h2>
+<div id="ii.7.-고용자수유발승수행렬과-승수" class="section level2" number="2.7">
+<h2><span class="header-section-number">2.7</span> II.7. 고용자수유발승수행렬과 승수</h2>
 <pre class="r"><code>고용자수유발승수행렬&lt;-생산유발승수행렬%*%diag(as.numeric(고용자수계수)) # %*%: 행렬곱
 고용자수유발승수=colSums(고용자수유발승수행렬) # 생산승수: 생산유발계수행렬의 열합
 labor_list&lt;-list(고용자수유발승수행렬,고용자수유발승수)
@@ -630,8 +606,8 @@ labor_list</code></pre>
 ## $고용자수유발승수
 ## [1] 0.1919916 0.1353308 0.4039777</code></pre>
 </div>
-<div id="ii.8.-외부효과-정의" class="section level2">
-<h2>II.8. 외부효과 정의</h2>
+<div id="ii.8.-외부효과-정의" class="section level2" number="2.8">
+<h2><span class="header-section-number">2.8</span> II.8. 외부효과 정의</h2>
 <pre class="r"><code>외부효과&lt;-matrix(c(0,0,560000000), nrow=3)
 print(외부효과)</code></pre>
 <pre><code>##         [,1]
@@ -647,10 +623,10 @@ print(외부효과)</code></pre>
 ## 서비스업  5.6e+08</code></pre>
 </div>
 </div>
-<div id="iii.-산업연관분석" class="section level1 tabset tabset-fade">
-<h1 class="tabset tabset-fade">III. 산업연관분석</h1>
-<div id="iii.1.-부문별-생산유발효과" class="section level2">
-<h2>III.1. 부문별 생산유발효과</h2>
+<div id="iii.-산업연관분석" class="section level1 tabset tabset-fade" number="3">
+<h1 class="tabset tabset-fade"><span class="header-section-number">3</span> III. 산업연관분석</h1>
+<div id="iii.1.-부문별-생산유발효과" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> III.1. 부문별 생산유발효과</h2>
 <pre class="r"><code>생파효과_부문&lt;-생산유발승수행렬%*%diag(as.numeric(외부효과))/100000000 # 억원 환산
 생파효과_부문_증가&lt;-생산유발승수행렬%*%diag(as.numeric(1.5*외부효과))/100000000 # 억원 환산
 생파효과_부문_list&lt;-list(외부효과,생파효과_부문,생파효과_부문_증가,(생파효과_부문-생파효과_부문_증가))
@@ -698,8 +674,8 @@ print(생파효과_부문_list)</code></pre>
 <pre><code>##                    외부효과 테스트외부효과 외부효과변화
 ## 생파효과_전체_전체 11.50284       17.25426    -5.751421</code></pre>
 </div>
-<div id="iii.2.-부문별-부가가치계유발효과" class="section level2">
-<h2>III.2. 부문별 부가가치계유발효과</h2>
+<div id="iii.2.-부문별-부가가치계유발효과" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> III.2. 부문별 부가가치계유발효과</h2>
 <pre class="r"><code>부파효과_부문&lt;-부가가치계유발승수행렬%*%diag(as.numeric(외부효과))/100000000 # 억원 환산
 부파효과_부문_증가&lt;-부가가치계유발승수행렬%*%diag(as.numeric(1.5*외부효과))/100000000 # 억원 환산
 부파효과_부문_list&lt;-list(외부효과,부파효과_부문,부파효과_부문_증가,(부파효과_부문-부파효과_부문_증가))
@@ -747,8 +723,8 @@ print(부파효과_부문_list)</code></pre>
 <pre><code>##                    외부효과 테스트외부효과 외부효과변화
 ## 부파효과_전체_전체 6.480273       9.720409    -3.240136</code></pre>
 </div>
-<div id="iii.3.-부문별-고용자수유발효과" class="section level2">
-<h2>III.3. 부문별 고용자수유발효과</h2>
+<div id="iii.3.-부문별-고용자수유발효과" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> III.3. 부문별 고용자수유발효과</h2>
 <pre class="r"><code>고파효과_부문&lt;-고용자수유발승수행렬%*%diag(as.numeric(외부효과))/1000000 # 100당 환산
 고파효과_부문_증가&lt;-고용자수유발승수행렬%*%diag(as.numeric(1.5*외부효과))/1000000 # 100당 환산
 고파효과_부문_list&lt;-list(외부효과,고파효과_부문,고파효과_부문_증가,(고파효과_부문-고파효과_부문_증가))
@@ -796,8 +772,8 @@ print(고파효과_부문_list)</code></pre>
 <pre><code>##                    외부효과 테스트외부효과 외부효과변화
 ## 고파효과_전체_전체 226.2275       339.3413    -113.1138</code></pre>
 </div>
-<div id="iii.4.-경제적파급효과종합" class="section level2">
-<h2>III.4. 경제적파급효과종합</h2>
+<div id="iii.4.-경제적파급효과종합" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> III.4. 경제적파급효과종합</h2>
 <pre class="r"><code>경제적파급효과종합_list&lt;-list(생파효과_전체_list,부파효과_전체_list,고파효과_전체_list)
 names(경제적파급효과종합_list) &lt;- c(&quot;생산파급효과(1+2차)&quot;, &quot;부가가치파급효과(1+2차)&quot;, &quot;고용자수파급효과(1+2차)&quot;)
 경제적파급효과종합_list</code></pre>
@@ -882,7 +858,7 @@ $(document).ready(function ()  {
 
     // establish options
     var options = {
-      selectors: "h1,h2,h3",
+      selectors: "h1,h2",
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
