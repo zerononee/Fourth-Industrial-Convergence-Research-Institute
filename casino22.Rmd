@@ -18,8 +18,8 @@ pacman::p_load("flexdashboard","ggplot2","plotly","shiny","plyr","dplyr",
 
 ```{r include=FALSE}
 # file.choose()
-DATA = read_excel("C:\\Users\\zeron\\Desktop\\Notebook fill\\Notebook fill\\마케팅기말과제\\sales3.xlsx")
-DATA2 = read_excel("C:\\Users\\zeron\\Desktop\\Notebook fill\\Notebook fill\\마케팅기말과제\\sales.xlsx")
+DATA = read_excel("C:\\Users\\Song_HY\\Desktop\\Notebook fill(0407)\\Notebook fill\\머신러닝 과제\\21년 2학기\\sales3.xlsx")
+DATA2 = read_excel("C:\\Users\\Song_HY\\Desktop\\Notebook fill(0407)\\Notebook fill\\머신러닝 과제\\21년 2학기\\sales.xlsx")
 ```
 
 ```{r include=FALSE}

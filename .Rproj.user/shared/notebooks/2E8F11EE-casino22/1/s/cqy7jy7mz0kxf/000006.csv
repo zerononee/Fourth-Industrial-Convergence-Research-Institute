@@ -1,0 +1,1648 @@
+"0","# file.choose()"
+"0","DATA = read_excel(""C:\\Users\\Song_HY\\Desktop\\Notebook fill(0407)\\Notebook fill\\머신러닝 과제\\21년 2학기\\sales3.xlsx"")"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D2 / R2C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D3 / R3C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D4 / R4C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D5 / R5C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D6 / R6C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D7 / R7C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D8 / R8C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D9 / R9C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D10 / R10C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D11 / R11C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D12 / R12C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D13 / R13C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D38 / R38C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D39 / R39C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D40 / R40C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D41 / R41C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D42 / R42C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D43 / R43C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D44 / R44C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D45 / R45C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D46 / R46C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D47 / R47C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D48 / R48C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D49 / R49C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D50 / R50C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D51 / R51C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D52 / R52C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D53 / R53C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D54 / R54C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D55 / R55C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D56 / R56C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D57 / R57C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D58 / R58C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D59 / R59C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D60 / R60C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D61 / R61C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D86 / R86C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D87 / R87C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D88 / R88C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D89 / R89C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D90 / R90C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D91 / R91C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D92 / R92C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D93 / R93C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D94 / R94C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D95 / R95C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D96 / R96C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D97 / R97C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D98 / R98C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D99 / R99C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D100 / R100C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D101 / R101C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D102 / R102C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D103 / R103C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D104 / R104C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D105 / R105C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D106 / R106C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D107 / R107C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D108 / R108C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D109 / R109C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D117 / R117C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D118 / R118C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D119 / R119C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D120 / R120C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D121 / R121C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D122 / R122C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D123 / R123C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D124 / R124C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D125 / R125C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D126 / R126C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D127 / R127C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D128 / R128C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D129 / R129C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D130 / R130C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D131 / R131C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D132 / R132C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D133 / R133C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D134 / R134C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D135 / R135C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D136 / R136C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D137 / R137C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D138 / R138C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D139 / R139C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D140 / R140C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D141 / R141C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D142 / R142C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D143 / R143C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D144 / R144C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D145 / R145C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D146 / R146C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D147 / R147C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D148 / R148C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D149 / R149C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D150 / R150C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D151 / R151C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D152 / R152C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D153 / R153C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D154 / R154C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D155 / R155C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D156 / R156C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D157 / R157C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D158 / R158C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D159 / R159C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D160 / R160C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D161 / R161C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D162 / R162C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D163 / R163C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D164 / R164C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D165 / R165C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D166 / R166C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D167 / R167C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D168 / R168C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D169 / R169C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D170 / R170C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D171 / R171C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D172 / R172C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D173 / R173C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D174 / R174C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D175 / R175C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D176 / R176C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D177 / R177C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D178 / R178C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D179 / R179C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D180 / R180C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D181 / R181C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D182 / R182C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D183 / R183C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D184 / R184C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D185 / R185C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D186 / R186C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D187 / R187C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D188 / R188C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D189 / R189C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D190 / R190C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D191 / R191C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D192 / R192C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D193 / R193C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D194 / R194C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D195 / R195C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D196 / R196C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D197 / R197C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D198 / R198C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D199 / R199C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D200 / R200C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D201 / R201C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D202 / R202C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D203 / R203C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D204 / R204C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D205 / R205C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D206 / R206C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D207 / R207C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D208 / R208C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D209 / R209C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D210 / R210C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D211 / R211C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D212 / R212C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D213 / R213C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D214 / R214C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D215 / R215C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D216 / R216C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D217 / R217C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D218 / R218C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D219 / R219C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D220 / R220C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D221 / R221C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D222 / R222C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D223 / R223C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D224 / R224C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D225 / R225C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D226 / R226C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D227 / R227C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D228 / R228C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D229 / R229C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D230 / R230C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D231 / R231C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D232 / R232C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D233 / R233C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D234 / R234C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D235 / R235C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D236 / R236C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D237 / R237C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D238 / R238C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D239 / R239C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D240 / R240C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D241 / R241C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D242 / R242C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D243 / R243C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D244 / R244C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D245 / R245C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D246 / R246C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D247 / R247C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D248 / R248C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D249 / R249C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D250 / R250C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D251 / R251C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D252 / R252C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D253 / R253C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D254 / R254C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D255 / R255C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D256 / R256C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D257 / R257C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D258 / R258C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D259 / R259C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D260 / R260C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D261 / R261C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D262 / R262C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D263 / R263C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D264 / R264C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D265 / R265C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D266 / R266C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D267 / R267C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D268 / R268C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D269 / R269C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D270 / R270C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D271 / R271C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D272 / R272C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D273 / R273C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D274 / R274C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D275 / R275C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D276 / R276C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D277 / R277C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D278 / R278C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D279 / R279C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D280 / R280C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D281 / R281C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D282 / R282C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D283 / R283C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D284 / R284C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D285 / R285C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D286 / R286C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D287 / R287C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D288 / R288C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D289 / R289C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D290 / R290C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D291 / R291C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D292 / R292C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D293 / R293C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D294 / R294C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D295 / R295C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D296 / R296C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D297 / R297C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D298 / R298C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D299 / R299C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D300 / R300C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D301 / R301C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D302 / R302C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D303 / R303C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D304 / R304C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D305 / R305C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D306 / R306C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D307 / R307C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D308 / R308C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D309 / R309C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D310 / R310C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D311 / R311C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D312 / R312C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D313 / R313C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D314 / R314C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D315 / R315C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D316 / R316C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D317 / R317C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D318 / R318C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D319 / R319C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D320 / R320C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D321 / R321C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D322 / R322C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D323 / R323C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D324 / R324C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D325 / R325C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D326 / R326C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D327 / R327C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D328 / R328C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D329 / R329C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D330 / R330C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D331 / R331C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D332 / R332C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D333 / R333C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D334 / R334C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D335 / R335C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D336 / R336C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D337 / R337C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D338 / R338C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D339 / R339C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D340 / R340C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D341 / R341C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D342 / R342C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D343 / R343C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D344 / R344C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D345 / R345C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D346 / R346C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D347 / R347C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D348 / R348C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D349 / R349C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D350 / R350C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D351 / R351C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D352 / R352C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D353 / R353C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D354 / R354C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D355 / R355C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D356 / R356C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D357 / R357C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D358 / R358C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D359 / R359C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D360 / R360C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D361 / R361C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D362 / R362C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D363 / R363C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D364 / R364C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D365 / R365C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D366 / R366C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D367 / R367C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D368 / R368C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D369 / R369C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D370 / R370C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D371 / R371C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D372 / R372C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D373 / R373C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D374 / R374C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D375 / R375C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D376 / R376C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D377 / R377C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D378 / R378C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D379 / R379C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D380 / R380C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D381 / R381C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D382 / R382C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D383 / R383C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D384 / R384C4: got a date
+"
+"2","Warning in read_fun(path = enc2native(normalizePath(path)), sheet_i = sheet,  :"
+"2","
+ "
+"2"," Expecting numeric in D385 / R385C4: got a date
+"
+"0","DATA2 = read_excel(""C:\\Users\\Song_HY\\Desktop\\Notebook fill(0407)\\Notebook fill\\머신러닝 과제\\21년 2학기\\sales.xlsx"")"

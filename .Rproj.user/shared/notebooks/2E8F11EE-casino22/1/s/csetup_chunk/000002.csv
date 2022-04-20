@@ -1,0 +1,6 @@
+"0","if (!require(pacman)) {install.packages(""pacman"")"
+"0","  library(pacman)}"
+"2","필요한 패키지를 로딩중입니다: pacman
+"
+"0","pacman::p_load(""flexdashboard"",""ggplot2"",""plotly"",""shiny"",""plyr"",""dplyr"","
+"0","               ""plotly"",""tm"", ""crosstalk"",""readxl"",""crosstalk"", ""readxl"")"
