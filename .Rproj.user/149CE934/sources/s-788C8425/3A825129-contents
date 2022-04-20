@@ -1,0 +1,115 @@
+---
+title: "Casino"
+output: 
+  html_document: 
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    number_sections: true
+
+---
+
+```{r setup, include=FALSE}
+if (!require(pacman)) {install.packages("pacman")
+  library(pacman)}
+pacman::p_load("flexdashboard","ggplot2","plotly","shiny","plyr","dplyr",
+               "plotly","tm", "crosstalk","readxl","crosstalk", "readxl")
+```
+
+```{r include=FALSE}
+# file.choose()
+DATA = read_excel("C:\\Users\\zeron\\Desktop\\Notebook fill\\Notebook fill\\마케팅기말과제\\sales3.xlsx")
+DATA2 = read_excel("C:\\Users\\zeron\\Desktop\\Notebook fill\\Notebook fill\\마케팅기말과제\\sales.xlsx")
+```
+
+```{r include=FALSE}
+Sales_Year = DATA2$Year
+Sales_1 = DATA2$`카지노 매출액`
+Sales_2 = DATA2$`외국인 전용 카지노`
+Sales_3 = DATA2$강원랜드
+Visit_Year = DATA2$Year2
+VIsit_Total = DATA2$`전국(명)`
+```
+
+
+
+### head
+```{r}
+head(DATA)
+```
+
+
+### name
+```{r}
+names(DATA)
+```
+
+
+### dim
+```{r}
+dim(DATA)
+```
+
+<br>
+
+### 카지노 방문객 수
+<!-- Data Select -->
+
+```{r message=FALSE}
+
+# generally speaking, use a "unique" key for filter, 
+# especially when you have multiple filters!
+#DATA = read_excel("C:/Users/Song/Desktop/sales3.xlsx")
+tx <- highlight_key(DATA)
+gg <- ggplot(tx) + geom_line(aes(year, median, group = city, color = city))
+
+filter <- bscols(
+  filter_select("id", "Select a city", tx, ~city),
+  ggplotly(gg, dynamicTicks = TRUE),
+  widths = c(12, 12)
+)
+
+tx2 <- highlight_key(DATA, ~city, "Select a city")
+gg <- ggplot(tx2) + geom_line(aes(year, median, group = city, color = city))
+
+select <- highlight(
+  ggplotly(gg, tooltip = "city"), 
+  selectize = TRUE, persistent = TRUE
+)
+
+bscols(filter, select)
+```
+
+<p>
+
+
+### 전체 방문객
+```{r}
+ppp = ggplot(DATA2) +
+  geom_area(aes(x=Visit_Year,y=VIsit_Total), group = 1, fill = "lightblue") +
+  xlab("년도") + ylab("방문객 수(명)")
+ ggplotly(ppp)
+```
+
+<br>
+
+### 카지노 매출액
+
+```{r}
+p = ggplot(DATA2) +
+  geom_line(aes(x=Sales_Year,y=Sales_1),group = 1 , col ='red') +
+  xlab("년도") + ylab("금액(조원)")
+ ggplotly(p)
+
+```
+
+### 외전 카지노 매출액 비중 추이
+
+```{r}
+pp = ggplot(DATA2) +
+  geom_line(aes(x=Sales_Year,y=Sales_2),group = 1 , col ='red') +
+  geom_line(aes(x=Sales_Year,y=Sales_3),group = 1 , col ='black') +
+  xlab("년도") + ylab("매출액 비율(%)")
+ ggplotly(pp)
+ 
+```
